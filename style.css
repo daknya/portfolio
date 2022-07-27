@@ -1,0 +1,232 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ 
+}
+
+.navigator{
+     position: fixed;
+     top: 0;
+     left: 0;
+     padding: 0.4rem 0;
+     z-index: 3;
+     width: 100%;
+     background-color: #202529;
+    
+    
+}
+.navigator .container{
+     display: flex;
+   
+  max-width: 1000px;
+  margin: auto;
+}
+
+.nav {
+    display: flex;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+.nav div{
+     min-width: 80px;
+     gap: 0.25rem;
+  padding: 0.9rem;
+    
+}
+.nav a{
+     color:#ccd4da;
+     text-decoration: none;
+     
+}
+
+
+.mode{
+     margin-left: auto;
+   
+     background-image: url(./img/moon-svgrepo-com.svg);
+     background-repeat: no-repeat;
+     background-size: 40px 50px;
+     
+ 
+}
+
+.body{
+    
+    max-width: 920px;
+    margin: auto;
+     margin-top: 10vh;
+     font-family: 'Roboto Condensed', sans-serif;
+     padding: 20px;
+}
+.para{
+     color:#848E96;
+}
+.intro{
+     display: flex;
+    
+     justify-content: space-between;
+   align-items: center;
+    
+}
+
+.intro img{
+     width: 240px;
+     height: 240px;
+     border-radius: 50%;
+  
+    box-shadow: #848E96 4px 3px 5px;
+
+}
+@media (max-width: 600px){
+     .intro{
+         flex-direction: column-reverse;
+        align-items: center;
+        padding: 30px;
+        
+     }
+     .intro img{
+          width: 180px;
+          height: 170px;
+     }
+     .greet{
+          text-align: center;
+          padding-top: 10px ;
+     }
+     .body{
+          font-size: smaller;
+     }
+     .nav{
+          font-size: smaller;
+
+     }
+    
+}
+.tutorail{
+     width: 100%;
+     padding: 10px;
+
+}
+.LESFONT{
+     font-weight: 100;
+     font-size: smaller;
+}
+
+.tutorial-list{
+     display: grid;
+     max-width: 1100px;
+    margin: 0 auto ;
+    
+   gap: 1rem;
+     
+}
+
+@media (min-width :600px){
+     .tutorial-list{
+          grid-template-columns: repeat(2, 1fr);
+     }
+  
+}
+@media (min-width :900px){
+     .tutorial-list{
+          grid-template-columns: repeat(3, 1fr);
+     }
+}
+.tuto-box{
+      border: 1px solid rgb(177, 175, 175);
+      display: flex;
+      width: 100%;
+      padding: 10px;
+     gap: 1rem;
+     background-color: #f2f6f9;
+    
+}
+
+.pro-list{
+     display: grid;
+     gap:1rem;
+}
+@media (min-width: 600px){
+     .pro-list{
+          grid-template-columns: repeat(3,1fr);
+     }
+}
+@media (min-width:900px){
+     .pro-list{
+          grid-template-columns: repeat(5,1fr);
+     }
+}
+.project-box{
+     border: 1px solid rgb(196, 188, 188);
+     padding: 10px;
+     background-color:#e6edf2 ;
+}
+.project-box p, h1{
+     padding: 3px;
+} 
+.project-box button{
+     background-color: #ffffff;
+     padding: 10px;
+     border: #848E96;
+     border-radius: 5px;
+}
+.other{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 1rem;
+padding: 10px;
+max-width: 1000px;
+margin: auto;
+
+}
+.music{
+    
+     border: 1px solid rgb(92, 91, 91);
+     padding: .2rem;
+     width: 50%;
+     height: 200px;
+     filter: blur(1px);
+     background-image: url(./img/saxophone-g0c1861e03_640.jpg);
+     background-size: cover;
+}
+.ncc{
+    background-image: url(./img/ncc-g94bacc52a_640.jpg);
+     border: 1px solid rgb(92, 91, 91);
+     padding: .2rem;
+     width:50%;height: 200px;
+     filter: blur(1px);
+     background-size: cover;
+}
+.mis{
+     max-width: 1000px;
+     margin: auto;
+}
+.footer{
+     text-align: center;
+     padding: 14px;
+     background-color: #2b2c2d;
+     height: 9vh;
+     color: #ccd4da;
+}
+.date hr{
+     margin-top: 7px;
+     background-color: #848E96;
+}
+.date h2{
+     color: rgb(55, 153, 89);
+}
+.date a{
+     text-decoration: none;
+     color: #090909;
+
+     font-weight: lighter;
+     font-size: small;
+}
+.headline{
+     padding-top: 10px;
+     display: flex;
+     justify-content: space-between;
+}
