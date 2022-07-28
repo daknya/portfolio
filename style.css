@@ -56,6 +56,7 @@ h1,h2,h3,h4{
      background-image: url(./img/moon-svgrepo-com.svg);
      background-repeat: no-repeat;
      background-size: 40px 50px;
+     background-position: center;
      
  
 }
@@ -117,14 +118,16 @@ h1,h2,h3,h4{
 
 }
 .writing{
+     margin-top: 2rem;
      display: flex;
      flex-wrap: wrap;
-     justify-content: space-around;
+     justify-content: space-between;
      align-items: center;
 }
-.writing h1{
+.writing h1,p{
      margin-bottom: 1rem;
 }
+
 .LESFONT{
     
      font-size: smaller;
