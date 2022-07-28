@@ -5,6 +5,13 @@
  
 }
 
+html{
+     line-height: 1.6rem;
+}
+h1,h2,h3,h4{
+     line-height: 1.2rem;
+}
+
 .navigator{
      position: fixed;
      top: 0;
@@ -62,7 +69,7 @@
      padding: 20px;
 }
 .para{
-     color:#848E96;
+     color:#4d4f50;
 }
 .intro{
      display: flex;
@@ -109,8 +116,17 @@
      padding: 10px;
 
 }
+.writing{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+}
+.writing h1{
+     margin-bottom: 1rem;
+}
 .LESFONT{
-     font-weight: 100;
+    
      font-size: smaller;
 }
 
@@ -135,13 +151,18 @@
      }
 }
 .tuto-box{
-      border: 1px solid rgb(177, 175, 175);
+      /* border: 1px solid rgb(177, 175, 175); */
+      border-radius: 5px;
+
       display: flex;
       width: 100%;
       padding: 10px;
      gap: 1rem;
-     background-color: #f2f6f9;
+     background-color: #c9e3f9;
     
+}
+.tuto-box img{
+     box-shadow: #e1e7ec 2px 2px 2px 2px;
 }
 
 .pro-list{
@@ -159,9 +180,11 @@
      }
 }
 .project-box{
-     border: 1px solid rgb(196, 188, 188);
+     /* border: 1px solid rgb(196, 188, 188); */
+     border-radius: 5px;
      padding: 10px;
-     background-color:#e6edf2 ;
+     background-color: #cbdcea;
+
 }
 .project-box p, h1{
      padding: 3px;
@@ -211,12 +234,52 @@ margin: auto;
      height: 9vh;
      color: #ccd4da;
 }
+/* .art-tag{
+     margin-top: .7rem;
+   display: flex;
+   gap: 1rem;
+}
+.art-tag p{
+     padding: .1rem;
+     border:1px solid rgb(206, 201, 201) ;
+width: max-content;
+border-radius: 11px;
+font-size: smaller;
+background-color: #c9e3f9;
+
+} */
+.color1{
+     color: #f37616;
+}
+.color2{
+     color: #008cff;
+}
+.color3{
+     color: #39e305;
+}
+.artical{
+     background-color: #d4f2ce;
+     border-radius: 2px;
+}
+.artical .headline{
+     padding: 0 1rem;
+}
+.artical .headline p{
+     color: #777373;
+}
+.art-tag p{
+     border-left: 2px solid #000000;
+     padding-left: 1rem;
+     margin-top: 1rem;
+}
 .date hr{
      margin-top: 7px;
      background-color: #848E96;
 }
 .date h2{
-     color: rgb(55, 153, 89);
+     color: rgb(226, 148, 15);
+   text-align: center;
+   padding-right: 1rem;
 }
 .date a{
      text-decoration: none;
