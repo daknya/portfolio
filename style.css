@@ -11,7 +11,7 @@ html{
 h1,h2,h3,h4{
      line-height: 1.2rem;
 }
-
+/* navigation css starts here */
 .navigator{
      position: fixed;
      top: 0;
@@ -33,7 +33,7 @@ h1,h2,h3,h4{
 .nav {
     display: flex;
   width: 100%;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: Graphik, sans-serif;
 
 
 }
@@ -60,13 +60,13 @@ h1,h2,h3,h4{
      
  
 }
-
+/* body css starts here */
 .body{
     
     max-width: 920px;
     margin: auto;
      margin-top: 10vh;
-     font-family: 'Roboto Condensed', sans-serif;
+     font-family: Graphik , sans-serif;
      padding: 20px;
 }
 .para{
@@ -77,6 +77,7 @@ h1,h2,h3,h4{
     
      justify-content: space-between;
    align-items: center;
+   gap: 1rem;
     
 }
 
@@ -112,6 +113,7 @@ h1,h2,h3,h4{
      }
 
 }
+/* tutorial css starts here */
 .tutorail{
      width: 100%;
      padding: 10px;
@@ -124,10 +126,12 @@ h1,h2,h3,h4{
      justify-content: space-between;
      align-items: center;
 }
-.writing h1,p{
+.writing h1{
      margin-bottom: 1rem;
 }
-
+.head{
+     padding-bottom: 1rem;
+}
 .LESFONT{
     
      font-size: smaller;
@@ -154,19 +158,20 @@ h1,h2,h3,h4{
      }
 }
 .tuto-box{
-      /* border: 1px solid rgb(177, 175, 175); */
-      border-radius: 5px;
+      border: 1px solid rgb(177, 175, 175);
+     
 
       display: flex;
+      
       width: 100%;
       padding: 10px;
      gap: 1rem;
-     background-color: #c9e3f9;
+     /* background-color: #d3d8de; */
     
 }
-.tuto-box img{
-     box-shadow: #e1e7ec 2px 2px 2px 2px;
-}
+/* .tuto-box img{
+  
+} */
 
 .pro-list{
      display: grid;
@@ -184,19 +189,21 @@ h1,h2,h3,h4{
 }
 .project-box{
      /* border: 1px solid rgb(196, 188, 188); */
-     border-radius: 5px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
      padding: 10px;
-     background-color: #cbdcea;
+     background-color: #d3d8de;
 
 }
-.project-box p, h1{
-     padding: 3px;
+.project-box p{
+     padding-bottom: 15px;
 } 
 .project-box button{
      background-color: #ffffff;
      padding: 10px;
-     border: #848E96;
-     border-radius: 5px;
+     border:1px double rgb(6, 215, 61);
+   
 }
 .other{
      display: flex;
@@ -232,10 +239,26 @@ margin: auto;
 }
 .footer{
      text-align: center;
-     padding: 14px;
+     
      background-color: #2b2c2d;
-     height: 9vh;
+   
      color: #ccd4da;
+}
+
+.footer .links{
+     padding: 2rem;
+     display: flex;
+     gap: 1rem; justify-content: center;
+}
+.footer .links a{
+     text-decoration: none;
+     color: #ccd4da;
+}
+.footer .me{
+     background-color: #202529;
+     height: 10vh;
+     padding-top: 1vh;
+
 }
 /* .art-tag{
      margin-top: .7rem;
@@ -295,4 +318,13 @@ background-color: #c9e3f9;
      padding-top: 10px;
      display: flex;
      justify-content: space-between;
+}
+.project{
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+}
+.art{
+     color: #736f6f;
+     margin-top: 2rem;
+     
 }
