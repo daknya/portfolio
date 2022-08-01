@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            line-height: 1.6rem;
+            color: rgb(48, 46, 46);
+            font-family:monospace,sans-serif;
+            margin: 1rem;
+            font-size: smaller;
+        }
+        .card{
+            padding: 1rem;
+            border-radius: .2rem;
+            background-color: rgb(76, 145, 145);
+        }
+        h1{
+            padding-bottom: 10px;
+            line-height: 1.2rem;
+        }
+        .subtitle{
+            padding-bottom: 30px;
+        }
+        p{
+            padding-bottom:100px ;
+        }
+
+        .card-details-inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+          <h1>The Second City</h1>
+          <div class="subtitle">City of Big Shoulders</div>
+          <p>
+            Chicago is the home of the blues and the truth of jazz, the heart of comedy and the idea of
+            the skyscraper. It's a city with a swagger, but without the surliness or even the fake smiles
+            found in other cities of its size.
+          </p>
+      
+          <div class="card-details">
+            <div class="card-details-inner">
+              <div class="read-more">
+                <a class="button" href="https://en.wikivoyage.org/wiki/Chicago">Read Article</a>
+              </div>
+              <div class="options">
+                <div class="comments">
+                  <a href="#!">
+                    <i class="fa fa-comments-o"></i>
+                    16 comments
+                  </a>
+                </div>
+                <div class="likes">
+                  <a href="#!">
+                    <i class="fa fa-heart-o"></i>
+                    322 likes
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
