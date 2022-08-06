@@ -65,12 +65,12 @@ h1,h2,h3,h4{
     
     max-width: 920px;
     margin: auto;
-     margin-top: 10vh;
+     margin-top: 9vh;
      font-family: Graphik , sans-serif;
      padding: 20px;
 }
 .para{
-     color:#4d4f50;
+     color:#9fa8a8;
 }
 .intro{
      display: flex;
@@ -158,7 +158,7 @@ h1,h2,h3,h4{
      }
 }
 .tuto-box{
-      border: 1px solid rgb(177, 175, 175);
+      border: 1px solid rgb(223, 218, 218);
      
 
       display: flex;
@@ -168,6 +168,9 @@ h1,h2,h3,h4{
      gap: 1rem;
      /* background-color: #d3d8de; */
     
+}
+.tuto-box .img{
+     align-self: center;
 }
 /* .tuto-box img{
   
@@ -193,18 +196,21 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
      padding: 10px;
-     background-color: #d3d8de;
+     background-color: #eafbfa;
 
 }
 .project-box p{
      padding-bottom: 15px;
 } 
 .project-box button{
-     background-color: #ffffff;
-     padding: 10px;
-     border:1px double rgb(6, 215, 61);
+     background-color: #fafafa;
+     padding: 3px;
+     font-size: 12px;
+     border-radius: 3px;
+     border:1px double rgb(141, 141, 141);
    
 }
+
 .other{
      display: flex;
      justify-content: space-between;
@@ -328,3 +334,23 @@ background-color: #c9e3f9;
      margin-top: 2rem;
      
 }
+.active{
+     background-color: #0d0d07;
+    border-radius: 3px;
+ }
+ .darkmode{
+      background-color: #2b2c2d;
+      color: #f2f2f2;
+ }
+ .darkmodep {
+      background-color: #2b2c2d;
+      color: #f2f2f2;
+      border: 1px solid #ccd4da;
+ }
+ .back{
+      background-image: url(./img/icons8-sun-64\ \(1\).png);
+      background-repeat: no-repeat;
+      background-size: 40px 40px;
+      background-position: center;
+ 
+     }
