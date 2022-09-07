@@ -34,8 +34,21 @@ const disabledark=()=>{
 button.addEventListener('click',()=>{
       mode = localStorage.getItem("dark-mode");
         if (mode === "disabled") {
-          enabledark();
+         enabledark(); 
         } else {
-          disabledark();
+        disabledark();
         }
 });
+
+// keep current theme on page load
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('dark-mode')) {
+        let darkMode = localStorage.getItem("dark-mode");
+        
+        if (darkMode === "disabled") {
+            disabledark();
+        } else {
+            enabledark(); 
+        }
+    }
+})

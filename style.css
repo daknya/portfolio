@@ -1,3 +1,19 @@
+.light-theme {
+     --nav-bg : #202529;
+     --font : white;
+     
+}
+
+:root{
+    
+    --para:#9fa8a8 ;
+     --nav-bg :rgb(16, 16, 16);
+     --aclr :#ccd4da;
+
+
+}
+
+
 *{
      padding: 0;
      margin: 0;
@@ -10,6 +26,7 @@ html{
 }
 h1,h2,h3,h4{
      line-height: 1.2rem;
+    
 }
 /* navigation css starts here */
 .navigator{
@@ -18,8 +35,8 @@ h1,h2,h3,h4{
      left: 0;
      padding: 0.4rem 0;
      z-index: 3;
-     width: 100%;
-     background-color: #202529;
+     width: 100%;    
+     background-color: var(--nav-bg);
     
     
 }
@@ -44,7 +61,7 @@ h1,h2,h3,h4{
     
 }
 .nav a{
-     color:#ccd4da;
+     color: var(--aclr);
      text-decoration: none;
      
 }
@@ -74,7 +91,7 @@ body{
      
 }
 .para{
-     color:#9fa8a8;
+     color: var(--para);
 }
 .intro{
      display: flex;
@@ -156,11 +173,18 @@ body{
      .tutorial-list{
           grid-template-columns: repeat(2, 1fr);
      }
-  
+  .pro-list{
+     grid-template-columns: repeat(3, 1fr);
+
+  }
 }
 @media (min-width :900px){
      .tutorial-list{
           grid-template-columns: repeat(3, 1fr);
+     }
+     .pro-list{
+          grid-template-columns: repeat(3, 1fr);
+
      }
 }
 .tuto-box{
@@ -185,6 +209,7 @@ body{
 .pro-list{
      display: grid;
      gap:1rem;
+      
 }
 @media (min-width: 600px){
      .pro-list{
@@ -219,7 +244,7 @@ justify-content: space-between;
 
 .other{
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
      gap: 1rem;
 padding: 10px;
@@ -227,24 +252,21 @@ max-width: 1000px;
 margin: auto;
 
 }
-.music{
-    
-     border: 1px solid rgb(92, 91, 91);
-     padding: .2rem;
-     width: 50%;
-     height: 200px;
-     filter: blur(1px);
-     background-image: url(./img/saxophone-g0c1861e03_640.jpg);
-     background-size: cover;
+.other img{
+     max-width: 250px;
+    max-height: 210px;
+    margin: 1rem;
 }
-.ncc{
-    background-image: url(./img/ncc-g94bacc52a_640.jpg);
-     border: 1px solid rgb(92, 91, 91);
-     padding: .2rem;
-     width:50%;height: 200px;
-     filter: blur(1px);
-     background-size: cover;
+
+.other .bg
+{
+     height: 100%;
+ background-color: #bbbdbe;
 }
+.other a{
+     color:rgb(65, 63, 63);
+}
+
 .mis{
      max-width: 1000px;
      margin: auto;
@@ -269,7 +291,7 @@ margin: auto;
 .footer .me{
      background-color: #202529;
      height: 10vh;
-     padding-top: 1vh;
+     padding-top: 2vh;
 
 }
 /* .art-tag{
