@@ -12,7 +12,10 @@
 
 
 }
-
+a{
+     text-decoration: none;
+     color:white ;
+}
 
 *{
      padding: 0;
@@ -69,7 +72,6 @@ h1,h2,h3,h4{
 
 .mode{
      margin-left: auto;
-   
      background-image: url(./img/moon-svgrepo-com.svg);
      background-repeat: no-repeat;
      background-size: 30px 40px;
@@ -106,8 +108,9 @@ body{
      width: 240px;
      height: 240px;
      border-radius: 50%;
-  
-    box-shadow: #848E96 4px 3px 5px;
+  object-fit: cover ;
+  border: 5px solid rgb(115, 122, 115);
+   
 
 }
 @media (max-width: 600px){
